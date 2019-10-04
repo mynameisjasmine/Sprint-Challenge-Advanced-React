@@ -8,10 +8,12 @@ class Players extends React.Component {
  render() {
 
  return (
- <div>
+  <div className="stats-container">
+ <div className="stats-div">
   <p>Name: {this.props.info.name}</p>
   <p>Country: {this.props.info.country}</p>
   <p>Searches: {this.props.info.searches}</p>
+ </div>
  </div>
  )
  }
