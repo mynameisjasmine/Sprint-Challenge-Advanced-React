@@ -9,6 +9,7 @@ test('renders without crashing', () => {
 
 });
 
-test('Is dark mode false?', () => {
-  render(<Nav />, div);
+test('Does the word click exist?', () => {
+  const { getByText } = render(<Nav />);
+  getByText(/click/i)
 })
